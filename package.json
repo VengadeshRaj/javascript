@@ -1,0 +1,11 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "basics of javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vengadesh raj",
+  "license": "ISC"
+}
