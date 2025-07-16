@@ -1,4 +1,6 @@
-Array.prototype.customJoin = function(joinString){
+Array.prototype.customJoin = function(separator=","){ // Setting default separator value as ","
+    // Convert separator into string to avoid unexpected type mismatch 
+    separator = String(separator);
      // Create result string to store response
     let result = "";
     // Iterating array
@@ -7,9 +9,9 @@ Array.prototype.customJoin = function(joinString){
         if(i==0){ 
             result = result + this[i]
         }
-        // Append each element with joining string
+        // Append each element with separator string
         else {
-            result = result + joinString + this[i]
+            result = result + separator + this[i]
         }
     }
     //Return response
@@ -17,7 +19,7 @@ Array.prototype.customJoin = function(joinString){
 };
 
 
-const test = ["v","e","n","k","a","t"];
+const test = [1,2,3,4,5];
 
 const cusJoinResponse = test.customJoin("-");
 
