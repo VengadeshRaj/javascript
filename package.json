@@ -1,7 +1,7 @@
 {
-  "name": "javascript-basics",
+  "name": "javascript-concepts",
   "version": "1.0.0",
-  "description": "basics of javascript",
+  "description": "concepts of javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
