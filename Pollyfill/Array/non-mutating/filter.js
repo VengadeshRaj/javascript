@@ -1,3 +1,10 @@
+// filter --> Creates a new array with all elements that pass a test specified by a function.
+// It will take three arguments in the callback function
+// Example callback(value, index, array)
+// value ---> element of current loop
+// index ---> index of the each loop
+// array ---> whole array itself
+
 Array.prototype.customFilter =  function(callbackFn){
     // Create result array to store response
     const result  = [];

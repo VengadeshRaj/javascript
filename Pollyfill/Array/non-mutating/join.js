@@ -1,3 +1,7 @@
+// join ---> Joins all elements of an array into a string
+// It will take one arugument that is separater, By default it will be "," 
+// and also we can change the separator as per our wish
+
 Array.prototype.customJoin = function(separator=","){ // Setting default separator value as ","
     // Convert separator into string to avoid unexpected type mismatch 
     separator = String(separator);

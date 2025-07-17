@@ -1,4 +1,4 @@
-// One of the Non mutating array method
+// Map ---> Creates a new array with the results of calling a function on every element in the array.
 // It will take three arguments in the callback function
 // Example callback(value, index, array)
 // value ---> element of current loop
