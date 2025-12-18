@@ -2,21 +2,25 @@ function CustomPromise(executer) {
   let onResolve,
     onReject,
     isFullfilled = false,
+    isRejected = false,
     isCalled = false,
     localValue;
 
   function resolve(value) {
     isFullfilled = true;
     localValue = value;
-    if (onResolve === "function") {
+    if (typeof onResolve === "function") {
       onResolve(value);
       isCalled = true;
     }
   }
 
   function reject(value) {
-    if (onReject == "function") {
+    isRejected = true;
+    localValue = value;
+    if (typeof onReject === "function") {
       onReject(value);
+      isCalled = true;
     }
   }
 
@@ -28,13 +32,17 @@ function CustomPromise(executer) {
     }
     return this;
   };
+
   this.catch = function (cbFn) {
     onReject = cbFn;
-    return this;
+    if(isRejected && !isCalled){
+      onReject(localValue)
+    }
   };
 
   executer(resolve, reject);
 }
+
 
 const result = new CustomPromise((resolve, reject) => {
   setTimeout(() => {
@@ -42,4 +50,4 @@ const result = new CustomPromise((resolve, reject) => {
   }, 2000);
 });
 
-result.then((res) => console.log(res));
+result.then((res) => console.log(res)).catch((err)=> console.log(err))
