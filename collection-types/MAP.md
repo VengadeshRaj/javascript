@@ -7,7 +7,7 @@ Map is a built-in collection object used to store key–value pairs, similar to 
 Unlike normal objects, a Map can use any data type as a key—objects, arrays, functions, numbers, etc.
 
 ## Example:
-    ```js
+```js
     const userMap = new Map();
 
     userMap.set("name", "Vengadesh");
@@ -16,7 +16,7 @@ Unlike normal objects, a Map can use any data type as a key—objects, arrays, f
 
     console.log(userMap.get("name")); // Vengadesh
     console.log(userMap.size);        // 3
-    ```
+ ```
 
 ## Advantages:
 
