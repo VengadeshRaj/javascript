@@ -45,7 +45,7 @@ Unlike normal objects, a Map can use any data type as a key objects, arrays, fun
 
 
 ## Methods:
-    ```js
+```js
     map.set(key, value);   // Add / update
     map.get(key);          // Read
     map.has(key);          // Check existence
@@ -53,5 +53,5 @@ Unlike normal objects, a Map can use any data type as a key objects, arrays, fun
     map.clear();           // Remove all
     map.size;              // Count
 
-    ```
+```
 
