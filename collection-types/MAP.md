@@ -4,7 +4,7 @@ Map is a built-in collection object used to store key–value pairs, similar to 
 
 ## Keys:
 
-Unlike normal objects, a Map can use any data type as a key—objects, arrays, functions, numbers, etc.
+Unlike normal objects, a Map can use any data type as a key objects, arrays, functions, numbers, etc.
 
 ## Example:
 ```js
