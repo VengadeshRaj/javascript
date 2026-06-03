@@ -12,5 +12,5 @@ for(let i = n; i>0; i--){
         if(i == j || i<j) rows = rows+"*"
         else rows = rows + " "
     }
-    console.log(rows)
+    console.log(rows);
 }
