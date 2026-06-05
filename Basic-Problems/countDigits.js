@@ -5,7 +5,7 @@ function countDigits(value){
     let count = 0;
     while (value > 0){
         value =Math.floor(value/10);
-        count++
+        count++;
     }
     return count;
 }
