@@ -14,7 +14,7 @@ function findSecondSmallest(numbers) {
   return secondSmallest;
 }
 
-const input = [45,67,6,12,33,89,4,12,90,32];
+const input = [45, 67, 6, 12, 33, 89, 4, 12, 90, 32];
 
 const result = findSecondSmallest(input);
 
