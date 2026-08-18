@@ -9,7 +9,7 @@
 // Leet code problem number : 88
 
 function mergeSortedArray(nums1, m, nums2, n) {
-  const nums1Copy = nums1.slice(0, m);
+  const nums1Copy = nums1.slice(0, m);// [1, 2, 3, 0, 0, 0] --> [1,2,3]
   let p1 = 0; // position to track nums1Copy
   let p2 = 0; // // position to track nums2
 
