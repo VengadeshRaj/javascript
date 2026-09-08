@@ -4,6 +4,8 @@
 
 // You must write an algorithm with O(log n) runtime complexity.
 
+// Leet code Problem no : 704
+
 function binarySearch(nums,target){
     let L = 0;
     let R = nums.length -1;
