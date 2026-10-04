@@ -1,3 +1,4 @@
+// Print the sum of all the values present in the array
 const arr = [5,3,2,0,1];
 
 function sum(n){
